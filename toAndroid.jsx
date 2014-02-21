@@ -9,7 +9,7 @@ var folder = Folder.selectDialog("select folder");
 var files = folder.getFiles("*.ai");
 var defDpi=0.72;
 
-dpis = new Array("ldpi",120/defDpi,"mdpi",160/defDpi,"hdpi",240/defDpi,"xhdpi",320/defDpi);
+dpis = new Array("ldpi",120/defDpi,"mdpi",160/defDpi,"hdpi",240/defDpi,"xhdpi",320/defDpi, "xxhdpi", 480/defDpi);
 var dpiLength = dpis.length;
 for(j=0; j < dpiLength;j+=2){
 	var createFolder = new Folder (folder.fsName+"\\"+dpis[j]);
